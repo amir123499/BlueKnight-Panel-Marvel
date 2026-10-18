@@ -42,11 +42,22 @@
 
 ---
 
+## 📦 دو نسخه برای دانلود
+
+توی صفحه‌ی **Releases** همین ریپو دو فایل هست — هر کدوم رو که می‌خوای بردار:
+
+| فایل | چیه؟ |
+|---|---|
+| **`worker.js`** | نسخه‌ی مارول (تغییر ظاهری arblant روی BlueKnight v5.2.4) — سه طراحی UI، ۹ تم شیشه‌ای، ترجمه‌ی فارسی کامل، QR محلی. پنل روی `/panel` |
+| **`worker-standalone.js`** | نسخه‌ی **اصلی و دست‌نخورده‌ی** BlueKnight Panel v5.2.4 — دقیقاً همون فایلی که سازنده منتشر کرده، بدون هیچ تغییری. پنل روی `/panel` |
+
+> هر دو نسخه پنلشون روی `/panel` باز میشه و مراحل نصب یکیه.
+
 ## ⚡ نصب در ۳ دقیقه (Cloudflare Workers — رایگان)
 
 ۱. از صفحه‌ی **Releases** همین ریپو فایل **`worker.js`** را دانلود کن
 ۲. برو به [dash.cloudflare.com](https://dash.cloudflare.com) ← بخش **Workers & Pages** ← **Create** ← **Start from Hello World** ← **Deploy**
-۳. **Edit code** ← کل کد نمونه را پاک کن ← محتوای `worker.js` را پیست کن ← **Deploy**
+۳. **Edit code** ← کل کد نمونه را پاک کن ← محتوای فایلی که دانلود کردی (`worker.js` یا `worker-standalone.js`) را پیست کن ← **Deploy**
 ۴. بخش **Storage & Databases** ← **KV** ← یه namespace بساز (مثلاً `blueknight`)
 ۵. برگرد به ورکر ← **Settings** ← **Bindings** ← **Add** ← **KV namespace** ← اسم متغیر دقیقاً **`BK_KV`**
 ۶. **Settings** ← **Runtime** ← compatibility date روی `2024-09-23` یا جدیدتر + فلگ **`nodejs_compat`** را فعال کن ← **Deploy**
