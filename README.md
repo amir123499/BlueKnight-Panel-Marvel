@@ -2,8 +2,6 @@
 
 # 🛡️ پنل arblant — نسخه‌ی مارولِ BlueKnight Panel
 
-![بنر](docs/banner.webp)
-
 ---
 
 ## ⚠️ اول از همه: کردیت سازنده‌ی اصلی
