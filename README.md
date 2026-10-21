@@ -74,14 +74,11 @@ Get `worker.js` from the **[Releases](../../releases)** page.
 
 ## 🚂 Railway Deploy
 
-This panel also runs on [Railway](https://railway.app) using the files in the `railway/` folder (same approach as the original BlueKnight panel).
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/amir123499/BlueKnight-Panel-Marvel)
 
-1. Fork this repo (or use it directly)
-2. On Railway: **New Project** → **Deploy from GitHub repo** → select this repo
-3. Set the **Root Directory** to `railway`
-4. Add a **Volume** mounted at `/app/data` (for persistent storage)
-5. Deploy — Railway auto-detects the `Dockerfile`
-6. Open `https://<your-app>.up.railway.app/panel` — set an admin password on first visit
+1. Click **Deploy on Railway** above (or: New Project → Deploy from GitHub repo → this repo)
+2. Add a **Volume** mounted at `/app/data` (keeps your admin password and data after redeploys)
+3. Done — open `https://<your-app>.up.railway.app/panel`
 
 Optional env vars: `PANEL_PASSWORD`, `JWT_SECRET`, `VLESS_UUID`, `TROJAN_PASSWORD`
 
@@ -178,14 +175,11 @@ Copyright of the original code belongs to BlueKnight; UI changes in this version
 
 ## 🚂 نصب روی Railway
 
-این پنل روی [Railway](https://railway.app) هم اجرا می‌شود (فایل‌ها توی پوشه‌ی `railway/` هستند — همون روش پنل اصلی BlueKnight).
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/amir123499/BlueKnight-Panel-Marvel)
 
-۱. این ریپو را Fork کن (یا مستقیم استفاده کن)
-۲. توی Railway: **New Project** ← **Deploy from GitHub repo** ← این ریپو را انتخاب کن
-۳. **Root Directory** را روی `railway` بذار
-۴. یه **Volume** اضافه کن با mount روی `/app/data` (برای ذخیره‌سازی دائمی)
-۵. Deploy کن — Railway خودش `Dockerfile` را پیدا می‌کند
-۶. باز کن: `https://<your-app>.up.railway.app/panel` — بار اول پسورد ادمین می‌خواهد
+۱. دکمه‌ی **Deploy on Railway** بالا را بزن (یا: New Project ← Deploy from GitHub repo ← این ریپو)
+۲. یه **Volume** اضافه کن با mount روی `/app/data` (تا پسورد و دیتا بعد از redeploy نپره)
+۳. تمومه — باز کن: `https://<your-app>.up.railway.app/panel`
 
 متغیرهای اختیاری: `PANEL_PASSWORD` ،`JWT_SECRET` ،`VLESS_UUID` ،`TROJAN_PASSWORD`
 
