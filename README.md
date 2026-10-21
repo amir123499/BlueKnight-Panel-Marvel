@@ -72,6 +72,21 @@ Get `worker.js` from the **[Releases](../../releases)** page.
 
 ---
 
+## 🚂 Railway Deploy
+
+This panel also runs on [Railway](https://railway.app) using the files in the `railway/` folder (same approach as the original BlueKnight panel).
+
+1. Fork this repo (or use it directly)
+2. On Railway: **New Project** → **Deploy from GitHub repo** → select this repo
+3. Set the **Root Directory** to `railway`
+4. Add a **Volume** mounted at `/app/data` (for persistent storage)
+5. Deploy — Railway auto-detects the `Dockerfile`
+6. Open `https://<your-app>.up.railway.app/panel` — set an admin password on first visit
+
+Optional env vars: `PANEL_PASSWORD`, `JWT_SECRET`, `VLESS_UUID`, `TROJAN_PASSWORD`
+
+---
+
 ## 🔒 Security notes
 
 - Login has brute-force protection (429 after 8 failed attempts), but a long password is still best.
@@ -158,6 +173,21 @@ Copyright of the original code belongs to BlueKnight; UI changes in this version
 ۷. باز کن: `https://< اسم-ورکرت >.workers.dev/panel` — بار اول پسورد ادمین می‌خواهد. **یه پسورد طولانی بذار.**
 
 > بدون `BK_KV` پنل جایی برای نگه‌داشتن پسورد ندارد و لاگین کار نمی‌کند.
+
+---
+
+## 🚂 نصب روی Railway
+
+این پنل روی [Railway](https://railway.app) هم اجرا می‌شود (فایل‌ها توی پوشه‌ی `railway/` هستند — همون روش پنل اصلی BlueKnight).
+
+۱. این ریپو را Fork کن (یا مستقیم استفاده کن)
+۲. توی Railway: **New Project** ← **Deploy from GitHub repo** ← این ریپو را انتخاب کن
+۳. **Root Directory** را روی `railway` بذار
+۴. یه **Volume** اضافه کن با mount روی `/app/data` (برای ذخیره‌سازی دائمی)
+۵. Deploy کن — Railway خودش `Dockerfile` را پیدا می‌کند
+۶. باز کن: `https://<your-app>.up.railway.app/panel` — بار اول پسورد ادمین می‌خواهد
+
+متغیرهای اختیاری: `PANEL_PASSWORD` ،`JWT_SECRET` ،`VLESS_UUID` ،`TROJAN_PASSWORD`
 
 ---
 
