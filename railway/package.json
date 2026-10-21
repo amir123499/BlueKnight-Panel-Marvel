@@ -1,0 +1,11 @@
+{
+  "name": "marvel-panel",
+  "version": "1.0.0",
+  "description": "Marvel Panel — BlueKnight Panel mod with native features, Railway-ready",
+  "main": "server.js",
+  "type": "module",
+  "engines": { "node": ">=22.0.0" },
+  "scripts": { "start": "node server.js" },
+  "author": "arblant",
+  "license": "MIT"
+}
